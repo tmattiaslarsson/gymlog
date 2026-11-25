@@ -267,7 +267,7 @@ function renderTraining() {
         <span class="training-option-icon">📅</span>
         <span class="training-option-info">
           <strong>Skapa ett träningsschema</strong>
-          <small>Planera vad du ska träna varje veckodag.</small>
+          <small>Planera din träningsvecka.</small>
         </span>
         <span class="training-option-arrow">›</span>
       </button>
@@ -402,7 +402,7 @@ function renderStartWorkout() {
         <span class="training-option-icon">📋</span>
         <span class="training-option-info">
           <strong>Välj ett sparat program</strong>
-          <small>Starta ett träningspass från något av dina sparade program.</small>
+          <small>Starta ett färdigt träningsprogram.</small>
         </span>
         <span class="training-option-arrow">›</span>
       </button>

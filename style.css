@@ -1270,4 +1270,14 @@ input[type="number"] {
     white-space: nowrap;
     padding: 12px 6px;
   }
+  #add-program-exercise {
+    width: 65%;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  #save-schedule {
+   width: 65%;
+   font-size: 13px;
+   white-space: nowrap;
+  }
 }
