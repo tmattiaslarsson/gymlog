@@ -1,0 +1,26 @@
+
+{
+  "name": "GymLog",
+  "short_name": "GymLog",
+  "description": "Din personliga träningslogg",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#171b21",
+  "theme_color": "#171b21",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./gym-log-icon-192.png",
+      "sizes": "194x194",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./gym-log-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

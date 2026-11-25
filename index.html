@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#171a1f">
+
+  <title>GymLog</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GymLog">
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <header class="app-header">
+      <div class="app-logo">
+        GYM<span>LOG</span>
+      </div>
+
+      <div class="header-dumbbell" aria-label="GymLog">
+        <svg viewBox="0 0 48 48" width="27" height="27">
+          <g fill="none" stroke="#a3ed43" stroke-width="4"
+              stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 24h20"/>
+            <path d="M9 15v18M15 12v24M33 12v24M39 15v18"/>
+          </g>
+        </svg>
+      </div>
+      
+    </header>
+
+    <main id="page-content">
+
+      <!-- Sidornas innehåll visas här -->
+
+    </main>
+
+    <nav class="bottom-nav">
+
+      <button class="nav-item active" data-page="home">
+        <span class="nav-icon">⌂</span>
+        <span>Hem</span>
+      </button>
+
+      <button class="nav-item" data-page="training">
+        <span class="nav-icon">🏋</span>
+        <span>Träning</span>
+      </button>
+
+      <button class="nav-item" data-page="programs">
+        <span class="nav-icon">▤</span>
+        <span>Program</span>
+      </button>
+
+      <button class="nav-item" data-page="history">
+        <span class="nav-icon">▥</span>
+        <span>Historik</span>
+      </button>
+
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1254 @@
+
+/* =========================
+   GRUNDINSTÄLLNINGAR
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111419;
+  color: #f5f6f7;
+  min-height: 100vh;
+}
+
+/* =========================
+   APPENS HUVUDCONTAINER
+========================= */
+
+.app-container {
+  width: 100%;
+  max-width: 520px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #171b21;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 22px;
+}
+
+.app-logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.app-logo span {
+  color: #a3ed43;
+}
+
+.settings-button {
+  background: #252b33;
+  border: 1px solid #343c46;
+  color: #ffffff;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* =========================
+   HUVUDINNEHÅLL
+========================= */
+
+#page-content {
+  padding: 10px 20px 25px;
+  min-height: 65vh;
+}
+
+/* =========================
+   BOTTENNAVIGERING
+========================= */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 520px;
+  height: 76px;
+  background: #20252d;
+  border-top: 1px solid #303741;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #929ba7;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+}
+
+.nav-icon {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.nav-item.active {
+  color: #a3ed43;
+}
+
+.nav-item.active .nav-icon {
+  transform: scale(1.08);
+}
+
+/* =========================
+   MOBILANPASSNING
+========================= */
+
+button {
+  font-family: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid #a3ed43;
+  outline-offset: 3px;
+}
+
+/* =========================
+   GYMLOG HEMSKÄRM
+========================= */
+
+.home-hero {
+  padding: 22px 2px 26px;
+}
+
+.home-hero .page-eyebrow {
+  color: #a3ed43;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 13px;
+}
+
+.home-hero h1 {
+  color: #ffffff;
+  font-size: clamp(34px, 9vw, 43px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.home-hero h1 span {
+  color: #a3ed43;
+}
+
+.hero-subtitle {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.hero-description {
+  color: #929ba7;
+  font-size: 13px;
+  margin-top: 7px;
+  line-height: 1.5;
+}
+
+/* =========================
+   SEKTIONER
+========================= */
+
+.content-section {
+  margin-top: 23px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.section-heading h2 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.section-caption {
+  color: #8e99a5;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   SENASTE TRÄNINGSPASSET
+========================= */
+
+.latest-workout-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 15px;
+  padding: 16px;
+}
+
+.latest-workout-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #303b35;
+  font-size: 23px;
+}
+
+.latest-workout-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+.latest-workout-info strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.latest-workout-info span {
+  color: #929ba7;
+  font-size: 11px;
+}
+
+.latest-workout-arrow {
+  color: #a3ed43;
+  font-size: 27px;
+}
+
+/* =========================
+   STATISTIK
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  min-height: 112px;
+  padding: 14px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 15px;
+}
+
+.stat-icon {
+  font-size: 17px;
+  color: #a3ed43;
+}
+
+.stat-card strong {
+  color: #a3ed43;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.stat-card > span:last-child {
+  color: #aeb7c2;
+  font-size: 11px;
+}
+
+/* =========================
+   MOTIVERANDE BANNER
+========================= */
+
+.motivation-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 170px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 22px;
+  border-radius: 17px;
+  background:
+    radial-gradient(
+      ellipse at 90% 50%,
+      rgba(163, 237, 67, 0.20),
+      transparent 55%
+    ),
+    linear-gradient(120deg, #29332e, #20262c 70%);
+  border: 1px solid #3b4940;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content p {
+  color: #a3ed43;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.banner-content h2 {
+  color: #ffffff;
+  font-size: 27px;
+  line-height: 1.05;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.banner-content span {
+  display: block;
+  color: #b5c0b8;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+/* =========================
+   TRÄNINGSLOGG
+========================= */
+
+.training-hero {
+  padding: 22px 2px 15px;
+}
+
+.training-hero .page-eyebrow {
+  color: #a3ed43;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 13px;
+}
+
+.training-hero h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.training-hero h1 span {
+  color: #a3ed43;
+}
+
+.training-option {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 17px;
+  margin-bottom: 12px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.training-option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  background: #303b35;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.training-option-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.training-option-info strong {
+  font-size: 14px;
+}
+
+.training-option-info small {
+  color: #929ba7;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.training-option-arrow {
+  color: #a3ed43;
+  font-size: 26px;
+}
+
+/* =========================
+   TILLBAKAKNAPP
+========================= */
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  color: #a3ed43;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================
+   TOM TRÄNINGSSIDA
+========================= */
+
+#workout-exercises .placeholder-card {
+  padding: 28px 20px;
+  margin-bottom: 22px;
+}
+
+#workout-exercises .placeholder-card > span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+#workout-exercises .placeholder-card h2 {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+#workout-exercises .placeholder-card p {
+  color: #a3ed43;
+  font-size: 11px;
+  line-height: 1.5;
+  max-width: 100%;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+#workout-exercises {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+#workout-exercises .placeholder-card {
+  min-height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   ÖVNINGSVÄLJARE
+========================= */
+
+.exercise-search {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 12px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 13px;
+  outline: none;
+}
+
+.exercise-search:focus {
+  border-color: #a3ed43;
+}
+
+.exercise-search::placeholder {
+  color: #929ba7;
+}
+
+.exercise-categories {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 3px 0 14px;
+  margin-bottom: 8px;
+}
+
+.category-button {
+  flex-shrink: 0;
+  padding: 9px 14px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 20px;
+  color: #aeb7c2;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.category-button.active {
+  background: #303b35;
+  border-color: #a3ed43;
+  color: #a3ed43;
+}
+
+.exercise-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 9px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 13px;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.exercise-list-item > span:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.exercise-list-item strong {
+  font-size: 13px;
+}
+
+.exercise-list-item small {
+  color: #929ba7;
+  font-size: 11px;
+}
+
+/* =========================
+   UTFÄLLBARA ÖVNINGAR
+========================= */
+
+.workout-exercise-card {
+  margin-bottom: 10px;
+  overflow: hidden;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 15px;
+}
+
+.workout-exercise-card.open {
+  border-color: #526b3b;
+}
+
+.workout-exercise-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 17px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.workout-exercise-name {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.workout-exercise-name strong {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.workout-exercise-name small {
+  color: #929ba7;
+  font-size: 11px;
+}
+
+.workout-exercise-chevron {
+  color: #a3ed43;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.workout-exercise-content {
+  padding: 0 14px 15px;
+  border-top: 1px solid #303a45;
+}
+
+.workout-set {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) minmax(0, 1fr) 28px;
+  align-items: end;
+  gap: 8px;
+  padding: 13px 0;
+  border-bottom: 1px solid #303a45;
+}
+
+.workout-set-label {
+  align-self: center;
+  color: #a3ed43;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.workout-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.workout-input-group span {
+  color: #aeb7c2;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.workout-input-group input {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 8px;
+  background: #171b21;
+  border: 1px solid #3a444f;
+  border-radius: 9px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.workout-input-group input:focus {
+  outline: none;
+  border-color: #a3ed43;
+}
+
+.workout-remove-set {
+  width: 28px;
+  height: 37px;
+  background: #303741;
+  border: none;
+  border-radius: 8px;
+  color: #aeb7c2;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.workout-add-set {
+  width: 30%;
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 12px;
+  background: #303b35;
+  border: 1px solid #526b3b;
+  border-radius: 10px;
+  color: #a3ed43;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.workout-remove-exercise {
+  display: block;
+  margin: 13px auto 0;
+  padding: 7px 10px;
+  background: transparent;
+  border: none;
+  color: #d98b8b;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* =========================
+   ÖVNINGSVÄLJARE - NYA DELAR
+========================= */
+
+.exercise-picker-panel {
+  margin-top: 12px;
+  padding: 13px;
+  background: #1d232b;
+  border: 1px solid #303a45;
+  border-radius: 14px;
+}
+
+.exercise-picker-panel .exercise-search {
+  margin-bottom: 10px;
+}
+
+.exercise-picker-panel .exercise-categories {
+  margin-bottom: 5px;
+}
+
+.exercise-picker-panel .exercise-list-item {
+  margin-bottom: 8px;
+}
+
+.custom-exercise-area {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #303a45;
+}
+
+.custom-exercise-area .exercise-search {
+  margin-bottom: 10px;
+}
+
+.add-custom-exercise {
+  width: 100%;
+  padding: 12px;
+  background: #303b35;
+  border: 1px solid #526b3b;
+  border-radius: 10px;
+  color: #a3ed43;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.exercise-no-results {
+  padding: 14px 5px;
+  color: #929ba7;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================
+   AVSLUTA PASS
+========================= */
+
+.finish-workout-button {
+  margin-top: 20px;
+  border-color: #526b3b;
+}
+
+.finish-workout-button .training-option-icon {
+  color: #a3ed43;
+}
+
+/* =========================
+   HISTORIK
+========================= */
+
+.history-workout-card {
+  margin: 14px 0;
+  padding: 16px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 15px;
+}
+
+.history-workout-card h2 {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.history-workout-card > p {
+  margin-top: 6px;
+  color: #929ba7;
+  font-size: 11px;
+}
+
+.history-exercise {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #303a45;
+}
+
+.history-exercise strong {
+  color: #a3ed43;
+  font-size: 13px;
+}
+
+.history-exercise p {
+  margin-top: 6px;
+  color: #aeb7c2;
+  font-size: 11px;
+}
+
+/* =========================
+   RUBRIKER OCH TOMMA KORT
+========================= */
+
+.page-title {
+  margin-top: 22px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.page-description {
+  margin-top: 9px;
+  color: #929ba7;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.placeholder-card {
+  padding: 28px 20px;
+  margin-top: 18px;
+  background: #242b34;
+  border: 1px solid #303a45;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.placeholder-card > span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.placeholder-card h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.placeholder-card p {
+  color: #a3ed43;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =========================
+   ENKLA KNAPPAR I TRÄNINGSPASSET
+========================= */
+
+.workout-action-button {
+  margin-left: auto;
+  margin-right: auto;  
+  display: block;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  min-height: 49px;
+  margin-top: 12px;
+  padding: 13px 16px;
+  background: #242b34;
+  border: 1px solid #3b4651;
+  border-radius: 12px;
+  color: #f5f6f7;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.workout-action-button:hover {
+  background: #2b343d;
+  border-color: #a3ed43;
+}
+
+.action-button-icon {
+  color: #a3ed43;
+  font-size: 19px;
+  line-height: 1;
+}
+
+#exercise-picker-container {
+  margin-top: 22px;
+}
+
+.exercise-picker-panel {
+  padding: 14px;
+  background: #20262e;
+  border: 1px solid #303a45;
+  border-radius: 12px;
+}
+
+.exercise-picker-panel .exercise-search {
+  margin-bottom: 10px;
+}
+
+.finish-workout-button {
+  margin-top: 22px;
+  background: #303b35;
+  border-color: #526b3b;
+  color: #a3ed43;
+}
+
+.finish-workout-button:hover {
+  background: #39483a;
+  border-color: #a3ed43;
+}
+
+.finish-workout-button .action-button-icon {
+  color: #a3ed43;
+}
+
+/* =========================
+   NAMN PÅ TRÄNINGSPASSET
+========================= */
+
+.workout-name-label {
+  display: block;
+  margin: 8px 0 9px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.workout-name-input {
+  margin-bottom: 24px;
+}
+
+/* =========================
+   KÖR TIDIGARE PASS IGEN
+========================= */
+
+.repeat-workout-button {
+  margin-top: 18px;
+  background: #303b35;
+  border-color: #526b3b;
+  color: #a3ed43;
+}
+
+.repeat-workout-button:hover {
+  background: #39483a;
+  border-color: #a3ed43;
+}
+
+/* UTFÄLLBAR HISTORIK */
+
+.history-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background: transparent;
+  border: none;
+  color: #f5f6f7;
+  text-align: left;
+  cursor: pointer;
+}
+
+.history-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-heading strong {
+  font-size: 16px;
+  color: #a3ed43;
+}
+
+.history-heading small {
+  font-size: 12px;
+  color: #9aa3ad;
+}
+
+.history-arrow {
+  color: #a3ed43;
+  font-size: 23px;
+  margin-left: 12px;
+}
+
+.history-details {
+  padding: 0 16px 16px;
+}
+
+.history-details[hidden] {
+  display: none;
+}
+
+.history-details .history-exercise {
+  padding-top: 12px;
+  border-top: 1px solid #3b4651;
+  margin-top: 10px;
+}
+
+.history-details .repeat-workout-button {
+  width: 100%;
+}
+/* =========================
+   VECKOSCHEMA
+========================= */
+
+.schedule-day-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 14px;
+  background: #242b34;
+  border: 1px solid #3b4651;
+  border-radius: 12px;
+}
+
+.schedule-day-card label {
+  min-width: 85px;
+  color: #a3ed43;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.schedule-day-card input {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.schedule-day-card strong {
+  flex: 1;
+  color: #f5f6f7;
+  font-size: 13px;
+}
+
+.schedule-day-card span {
+  color: #a3ed43;
+  font-size: 12px;
+}
+
+.today-workout-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: #242b34;
+  border: 1px solid #526b3b;
+  border-radius: 12px;
+}
+
+.today-workout-card .latest-workout-icon {
+  font-size: 25px;
+}
+
+.today-workout-card .latest-workout-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.today-workout-card .latest-workout-info strong {
+  color: #a3ed43;
+}
+
+.today-workout-card .latest-workout-info span {
+  color: #9aa3ad;
+  font-size: 12px;
+}
+
+/* =========================
+   TRÄNINGSPROGRAM
+========================= */
+
+.program-card {
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.program-card h2 {
+  color: #a3ed43;
+  margin-bottom: 6px;
+}
+
+.program-exercise-summary {
+  margin-top: 14px;
+}
+
+.program-exercise-summary p {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #3b4651;
+  color: #f5f6f7;
+  font-size: 13px;
+}
+
+.program-exercise-summary span {
+  color: #a3ed43;
+}
+
+/* UTFÄLLBARA TRÄNINGSPROGRAM */
+
+.program-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.program-card .history-toggle {
+  width: 100%;
+}
+
+.program-details {
+  padding: 0 16px 16px;
+}
+
+.program-details[hidden] {
+  display: none;
+}
+
+.program-details .program-exercise-summary {
+  margin-top: 0;
+}
+
+.program-details .workout-action-button {
+  width: 100%;
+}
+
+.program-details .workout-remove-exercise {
+  margin-top: 12px;
+}
+
+/* TRÄNINGSTIDTAGARE */
+
+.workout-timer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #242b34;
+  border: 1px solid #526b3b;
+  border-radius: 14px;
+}
+
+.workout-timer-label {
+  color: #9aa3ad;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.workout-timer-card strong {
+  color: #a3ed43;
+  font-size: 34px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.workout-timer-caption {
+  color: #9aa3ad;
+  font-size: 12px;
+}
+/* TA BORT OCH NOLLSTÄLL HISTORIK */
+
+.delete-history-button {
+  width: 50%;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 12px;
+  background: #3a2528;
+  border: 1px solid #754047;
+  border-radius: 10px;
+  color: #ff8585;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.clear-history-button {
+  width: 50%;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid #754047;
+  border-radius: 12px;
+  color: #ff8585;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* HOVER-EFFEKTER FÖR RADERINGSKNAPPAR */
+
+.delete-history-button,
+.clear-history-button {
+  transition: border-color 0.2s ease;
+}
+
+.delete-history-button:hover,
+.clear-history-button:hover {
+  border-color: #ff8585;
+}
+.training-time-stat {
+  cursor: pointer;
+}
+/* Ta bort pilarna i nummerfälten */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.timer-control-button {
+  height: 42px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  line-height: 1;  
+  width: 210px;
+  width: 210px;
+  min-height: 42px;
+  white-space: nowrap;  
+  margin-top: 10px;
+  padding: 11px 22px;
+  background: #303b35;
+  border: 1px solid #526b3b;
+  border-radius: 10px;
+  color: #a3ed43;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.timer-control-button:hover {
+  background: #39483a;
+  border-color: #a3ed43;
+  width: 210px;
+  width: 210px;
+  min-height: 42px;
+  white-space: nowrap;
+}
